@@ -26,6 +26,14 @@
 body{
     height:100%;
 }
+.invisible{
+    width: 1px;
+    height: 1px;
+    position: fixed;
+    opacity: 0;
+    z-index: 50;
+}
+
 .section-p1{
     padding: 40px 80px;
 }
@@ -433,9 +441,12 @@ button.white{
     font-size: 25px;
 }
 #banner3 h3{
-    color:rgb(255, 15, 75);
-    font-weight: 900;
+    color:rgb(255, 255, 255);
+    font-weight: 1000;
     font-size: 20px;
+}
+#banner3 .banner-box3 h2, #banner3 .banner-box3 h3{
+    color:rgb(255, 0, 0);
 }
 
 #banner3{
@@ -573,6 +584,11 @@ footer a:hover{
 
 /* 
 media */
+@media(max-width:1288px){
+    #newsletter .form{
+        width:100%;
+    }
+}
 
 @media(max-width:820px){
     #navbar{
@@ -650,12 +666,18 @@ media */
     #banner3 .banner-box{
         width:28%
     }
-    #newsletter .form{
-        width:90%;
+    
+}
+
+@media(max-width:750px){
+    #banner{
+        height:30vh
     }
 }
 
-@media(max-width:477px){
+
+
+@media(max-width:611px){
     .section-p1{
         padding: 20px;
     }
@@ -709,4 +731,48 @@ media */
     footer .copyright{
         text-align: start;
     }
+}
+
+@media(max-width:401px){
+    #sm-banner .banner-box h4{
+        font-size:22px;
+    }
+    #sm-banner .banner-box h2{
+        font-size:28px;
+        line-height:40px;
+    }
+}
+
+@media(max-width:385px){
+    #banner h2{
+        font-size:35px;
+    }
+    #banner span{
+        font-size:40px;
+    }
+    #newsletter .form button{
+        padding: 5px;
+        height:3.125rem
+    }
+}
+@media(max-width:319px){
+    #banner h2{
+        font-size:30px;
+    }
+    #banner span{
+        font-size:35px;
+    }
+    #newsletter .form{
+        display: flex;
+        flex-direction: column;
+    }
+    #newsletter .form button{
+        width:100%;
+        margin-top:5px;
+    }
+}
+
+.big{
+    width: 999px;
+    height: 999px;
 }
